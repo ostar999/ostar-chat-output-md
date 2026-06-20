@@ -1,6 +1,8 @@
 # ostar-chat-output-md
 
-导出 Claude Code 当前会话聊天记录为 Markdown 格式。
+导出 AI 助手（Claude Code、Cursor、Cline 等）当前会话聊天记录为 Markdown 格式。
+
+支持多 Agent 平台，兼容 Claude Code、支持 Claude Code Skills 协议的其他 AI 编程助手。
 
 ## 触发词
 
@@ -15,6 +17,16 @@
 
 ## 安装
 
+### 方式一：通过 npx skills add（推荐）
+
 ```bash
-claude mcp add ostar-chat-output-md -- /Users/ouxingxing/.claude/skills/ostar-chat-output-md
+npx skills add ostar999/ostar-chat-output-md
 ```
+
+### 方式二：Git Clone
+
+```bash
+git clone https://github.com/ostar999/ostar-chat-output-md.git ~/.claude/skills/ostar-chat-output-md
+```
+
+克隆后在 Claude Code 中直接使用 `/ostar-chat-output-md` 触发，或配置到其他兼容 Agent 的 skills 目录中。
